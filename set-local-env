@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+PYTHON_VERSION="3.10.8"
+
+if ! [[ $(pyenv whence python ) =~ $PYTHON_VERSION ]]; then
+  pyenv install $PYTHON_VERSION
+fi
+
+pyenv local $PYTHON_VERSION
+pipenv --python $PYTHON_VERSION

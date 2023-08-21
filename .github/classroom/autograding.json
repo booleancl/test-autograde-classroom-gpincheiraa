@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "AutoGrading",
+      "setup": "./tests/setup",
+      "run": "pipenv run pytest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100
+    }
+  ]
+}
